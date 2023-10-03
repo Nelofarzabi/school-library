@@ -1,8 +1,8 @@
 require_relative 'person'
 
 class Teacher < Person
-  def initialize(age, specialization, name = 'Uknown', parent_permission: true)
-    super(age, name, parent_permission: parent_permission)
+  def initialize(specialization)
+    super(id, age, name, parent_permission: true)
     @specialization = specialization
   end
 
