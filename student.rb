@@ -4,6 +4,7 @@ class Student < Person
   def initialize(age, classroom, name = 'Uknown', parent_permission: true)
     super(age, name, parent_permission: parent_permission)
     @classroom = classroom
+    classroom.students.push(self)
   end
 
   def play_hook
