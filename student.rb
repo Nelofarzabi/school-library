@@ -1,13 +1,12 @@
-require_relative './person.rb'
+require_relative 'person'
 
 class Student < Person
-  def initialize(id, age, classroom, name = "Uknown", parent_permission = true)
-    super(id, age, name, parent_permission)
+  def initialize(age, classroom, name = 'Unknown', parent_permission: true)
+    super(age, name, parent_permission)
     @classroom = classroom
   end
 
   def play_hook
-    "¯\(ツ)/¯"
+    '¯\\(ツ)/¯'
   end
 end
-
